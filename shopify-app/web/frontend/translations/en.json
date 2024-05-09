@@ -1,0 +1,165 @@
+{
+  "global": {
+    "next": "Next",
+    "previous": "Previous",
+    "save": "Save",
+    "errorTitle": "Erreur",
+    "errorInformation": "Oups! une erreur survenue",
+    "register": "Enregistrer",
+    "close": "Close"
+  },
+  "welcome": {
+    "heading": "Bienvenue sur Upvoice",
+    "start-campaign-action": "Démarrer une campagne",
+    "help-action": "Besoin d'aide",
+    "content": "Envoyez automatiquement à vos clients un message sur répondeur à chaque abandon de panier"
+  },
+  "stepOne": {
+    "introduction": "Bienvenue sur Upvoice, bla bla, c'est super! Lançons votre première campagne et gagnons de l'oseille!",
+    "title": "Fréquence des dépôts",
+    "description": "Expliquer ce qu'est la fréquence des dépôts en quelques mots.",
+    "everyDayExceptWeekends": "Tous les jours, sauf les week-ends",
+    "customize": "Personnaliser",
+    "days": "Jours",
+    "schedule": "Horaires",
+    "begin": "Début",
+    "end": "Fin",
+    "monday": "Monday",
+    "tuesday": "Tuesday",
+    "wednesday": "Wednesday",
+    "thursday": "Thursday",
+    "friday": "Friday",
+    "saturday": "Saturday",
+    "sunday": "Sunday",
+    "scheduleComplete": "9h00 - 19h00",
+    "helpSupportButton": "Besoin d'aide ? Contacter le support",
+    "hours": {
+      "09": "09h00",
+      "10": "10h00",
+      "11": "11h00",
+      "12": "12h00",
+      "13": "13h00",
+      "14": "14h00",
+      "15": "15h00",
+      "16": "16h00",
+      "17": "17h00",
+      "18": "18h00",
+      "19": "19h00"
+    }
+  },
+  "stepTwo": {
+    "upload": "Cliquer ou déposer votre fichier",
+    "title": "Fichiers audios",
+    "description": "Enregistrez la voix de votre meilleur commercial, imaginez le meilleur discours, et chargez le(s) fichier(s) qui seront envoyés sur le répondeur de vos clients",
+    "fileUploaded": "Message vocal chargé",
+    "uploadYourFileAudio": "Chargez votre message vocal",
+    "addOtherAudio": "Ajoutez d'autres messages",
+    "addOtherAudioDescription": "Ajouter plusieurs messages vocaux pour profitez de la fonctionnalité d’A/B testing et booster vos taux de transformation avec le message le plus performant."
+  },
+  "stepThree": {
+    "title": "A/B testé vos messages vocaux",
+    "description": "Vos messages seront envoyés selon la fréquence que vous prévoyez. Vous n'êtes pas certains d'un discours ? Testez le sur 5% de vos utilisateurs uniquement et deduisez les resultats"
+  },
+  "stepFour": {
+    "labelInput": "Entrez un numéro de téléphone",
+    "title": "Numéro de rappel",
+    "description": "Le message vocal est envoyé sur répondeur via un numero dedié à votre shop. Les utilisateurs souhaitant rappeler ce numéro seront alors redirigés vers votre standard (ou celui de votre choix). Merci de nous l'indiquer ci dessous"
+  },
+  "stepFive": {
+    "title": "Votre campagne est prête à être lancée",
+    "description": "Un dernier coup d'oeil sur la configuration de votre campagne ?",
+    "launchCampaign": "Lancer la campagne",
+    "errorOnSave": "Une error survenur sur le enregistrement de campaggne!!"
+  },
+  "campaign": {
+    "titleFrequencyOfDeposit": "Fréquence des dépôts",
+    "titleAudioFile": "Fichiers audio",
+    "titleCallNumber": "Numéro de téléphone de rappel",
+    "descriptionCallNumber": "Explique ce qu'est le numéro de rappel et pourquoi on en a besoin."
+  },
+  "stepSix": {
+    "heading": "Félicitations! Votre campagne est lancée",
+    "seeAnalyseAndReport": "Voir analyses et retours",
+    "seeMyCampaign": "Voir ma campagne",
+    "firstParagraph": "Vous pouvez toujours éditer votre campagne ou la mettre sur pause à tout moment.",
+    "secondParagraph": " Retrouvez les analyses et les retours de votre campagne dans l'onglet <i>Analyses et retours</i>."
+  },
+  "launchingPage": {
+    "analysis-action": "Voir analyses et retours",
+    "settings-action": "Voir ma campagne",
+    "congratulation": "Félicitations ! Votre campagne est lancée 🥳",
+    "lign-1": "Vous pouvez toujours éditer votre campagne ou la mettre sur pause à tout moment. Retrouvez les analyses et les retours de votre campagne dans l’onglet Analyses et retours.",
+    "support": "Besoin d’aide ? Contacter le support"
+  },
+  "dashboard": {
+    "confirmationTitlePause": "Etes-vous sûr de vouloir mettre en pause votre campagne?",
+    "confirmationContentPause": "Attention, la mise en pause de votre campagne suspendra totalement l'envoie de message vocaux. Upvoice n'enregistrera plus vos paniers abandonnés et vos clients ne pourront plus être contactés par ce canal. Vous pouvez la réactiver à tout moment. Êtes vous certain de vouloir mettre en pause votre campagne ?",
+    "confirmationButtonPause": "Mettre en pause",
+    "confirmationTitleDelete": "Etes-vous sûr de vouloir supprimer votre campagne?",
+    "confirmationContentDelete": "La suppression de votre campagne est immédiate et est irréversible. Plus aucun message vocaux ne sera envoyé. Vos enregistrement vocaux, vos statistiques et vos paramètres seront perdus. Vos paniers abandonnés ne seront plus récuperer. Êtes vous certain de vouloir supprimer votre campagne",
+    "confirmationButtonDelete": "Supprimer la campagne",
+    "titleTabSettings": "Paramètres",
+    "titleAnalysisAndFeedback": "Analyses et retours",
+    "pauseCampaign": "Mettre la campagne sur pause",
+    "deleteCampaign": "Supprimer la campagne"
+  },
+  "settings": {
+    "pauseTitle": "Votre campagne est en pause",
+    "pauseAction": "Activer la campagne",
+    "pauseHelpAction": "Besoin d'aide ? Nous contacter",
+    "pauseContent": "Votre campagne a été sauvegardé mais ne sera effective qu'a son activation",
+    "activateTitle": "Campagne activée",
+    "activateContent": "C'est parti! 🥳 Votre campagne va commencer!",
+    "updateConfirmTitle": "Campagne enregistrée",
+    "updateConfirmContent": "Vos modifications ont bien été prise en compte"
+  },
+  "information": {
+    "pleaseWait": "Please wait…"
+  },
+  "tableLog": {
+    "header": "Tableau des rappels & messagerie",
+    "all": "Tout",
+    "message": "Messages",
+    "emptyTitle": "Pas encore des rappels & messagerie"
+  },
+  "stackedChart": {
+    "numberRecoveredCheckout": "number of recovered checkout",
+    "numberVoicemail": "number of voicemail to abandonned checkout"
+  },
+  "summaryBlock": {
+    "chat": "Reminders & messaging board",
+    "total": "Total turnover caught up",
+    "month": "On the month of March",
+    "basketCatchesUp": "% of baskets caught up",
+    "catchUPtime": "Catch-up time after voicemail",
+    "all": "All",
+    "message": "Messages"
+  },
+  "checkouts": {
+    "abandoned": "Panier abandonné",
+    "voicemailSent": "Voicemail envoyé",
+    "catchUp": "Panier rattrapé"
+  },
+  "payment": {
+    "rate": "TARIF",
+    "textHeader": "Un seul tarif",
+    "textSecond": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor.",
+    "textCardHeader": "Facturation mensuelle",
+    "textSupport": "Support Inclus",
+    "textPrice": "90€ HT + 2%",
+    "text0": "For Starter to get started small business, billed annually or month-to-month.",
+    "text1": "Envoi de messages illimités",
+    "text2": "A/B testing",
+    "text3": "Gestion d'horaire d'envois",
+    "text4": "Numero de rappel",
+    "text5": "Analytics",
+    "textSubmit": "Démarrer",
+    "faq": "FAQ",
+    "faqSecond": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor.",
+    "card2Header": "Lorem ipsum dolor sit amet, consect adipis?",
+    "card2Second": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus.",
+    "card3Header": "Lorem ipsum dolor sit amet, consect adipis?",
+    "card4Header": "Lorem ipsum dolor sit amet, consect adipis?",
+    "card5Header": "Lorem ipsum dolor sit amet, consect adipis?"
+  }
+}

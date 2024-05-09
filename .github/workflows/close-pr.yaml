@@ -1,0 +1,22 @@
+name: Close Pull Request
+
+# only trigger on pull request closed events
+on:
+  pull_request:
+    types: [ closed ]
+
+jobs:
+  release_shopify_app:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+
+      - run: pip install -r build/requirements.txt
+      - run: python build/ci.py release_app ${{ github.event.number }}
+        env:
+          MONGODB_URI: ${{ secrets.MONGODB_URI }}
+          GH_PAT: ${{ secrets.GH_PAT }}

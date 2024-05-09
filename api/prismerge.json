@@ -1,0 +1,12 @@
+{
+  "app": {
+    "inputs": [
+      "./src/database/models/*.prisma",
+      "./src/database/models/types/*.prisma"
+    ],
+    "fragments": {
+      "id": "./src/database/models/fragments/id.prisma.fragment"
+    },
+    "output": "./src/database/models/generated/schema.prisma"
+  }
+}

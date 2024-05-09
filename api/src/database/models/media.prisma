@@ -1,0 +1,7 @@
+model Media {
+    ...id
+    file        String
+    url         String?
+
+    @@map("media")
+}

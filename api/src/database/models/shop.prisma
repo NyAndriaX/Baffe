@@ -1,0 +1,5 @@
+model Shop {
+    ...id
+    name              String   @unique
+    @@map("shop")
+}

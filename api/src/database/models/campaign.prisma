@@ -1,0 +1,30 @@
+model Campaign {
+    ...id
+    days           DayActivity?
+    optionDays     String?
+    optionSchedule String?
+    scheduleBegin  String?
+    scheduleEnd    String?
+    phoneNumber    String?
+    voiceMails     VoiceMail[]
+    state          String
+    shopId         String       @unique @db.ObjectId
+
+    @@map("campaigns")
+}
+
+type DayActivity {
+    monday    Boolean
+    tuesday   Boolean
+    wednesday Boolean
+    thursday  Boolean
+    friday    Boolean
+    saturday  Boolean
+    sunday    Boolean
+}
+
+type VoiceMail {
+    mediaId String  @db.ObjectId
+    ratio   Int
+    url     String?
+}

@@ -1,0 +1,54 @@
+.Polaris-Layout__Section--oneThird {
+    margin-left: 10px !important;
+}
+
+.summary-item {
+    background: #F6FBFF;
+    padding: 32px 24px;
+    flex: 50%;
+    border-radius: 10px;
+    border: 1px solid #dcebf8;
+    margin-left: 2%;
+    margin-top: 2%;
+    padding: 5% 4%;
+}
+
+#text1Header {
+    margin-bottom: 0%;
+    font-weight: bold;
+}
+
+.text1 {
+    color: #FC4368;
+    font-size: 80%;
+    margin-bottom: 2%;
+    font-weight: 600;
+}
+
+.text2 {
+    color: #000;
+    font-size: 200%;
+    margin-bottom: 10%;
+    /* font-weight: bold; */
+    font-weight: 600;
+}
+
+.text3 {
+    color: #6d6d6d;
+    font-size: 80%;
+    font-weight: 600;
+    /* margin-bottom: 7%; */
+}
+
+.text4 {
+    color: #81CF84;
+    font-size: 90%;
+    font-weight: 700;
+}
+
+.arrow {
+    color: #81cf84;
+    width: 7%;
+    font-size: 90%;
+    font-weight: 700;
+}

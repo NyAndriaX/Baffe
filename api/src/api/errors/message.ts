@@ -1,0 +1,18 @@
+export const message = {
+  ERROR_CREATE: 'Error create',
+  ERROR_UPDATE: 'Error update',
+  ERROR_FIND_UNIQUE: 'Error find unique',
+  ERROR_FIND_MANY: 'Error find many',
+  ID_IS_EMPTY: 'Id is empty',
+  SHOP_NOT_FOUND: 'Shop is not found',
+  CAMPAIGN_IS_NOT_VALID: 'Campaign is not valid',
+  CAMPAIGN_NOT_FOUND: 'Campaign is not found',
+  MEDIA_NOT_FOUND: 'Media is not found',
+  CAMPAIGN_IS_ALREADY_EXIST: 'Campaign is already exist',
+  SHOP_IS_ALREADY_EXIST: 'Shop is already exist',
+  SHOP_IS_REQUIRED: '"shop" is required',
+  NAME_IS_REQUIRED: '"name" is required',
+  ERROR_DELETE: 'Error delete',
+  REQUEST_ABANDONED_CHECKOUT_IS_EMPTY: 'Request abandoned checkout is empty',
+  DATA_IS_REQUIRED: '"data" is required',
+};

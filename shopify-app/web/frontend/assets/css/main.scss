@@ -1,0 +1,46 @@
+.upvoice {
+  .onboarding {
+    margin: 0 auto;
+    .ob-welcome {
+      width: 100%;
+      .empty-state-container {
+        .Polaris-Text--headingLg {
+          margin-top: var(--p-space-5);
+          font-weight: 600;
+          font-size: var(--p-font-size-300);
+        }
+        .actions-container {
+          flex-direction: row-reverse;
+        }
+      }
+    }
+    .ob-card-container {
+      width: 35.5rem;
+      margin: 0 auto;
+      padding: var(--p-space-5);
+      .Polaris-Card__Section {
+        padding: 2.25rem;
+      }
+      .ob-leading-card-section {
+        margin-bottom: 3.5rem;
+      }
+      .footer-step {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: var(--p-space-5);
+      }
+    }
+  }
+  .text-container {
+    margin-bottom: var(--p-space-2);
+    .Polaris-Text--headingLg {
+      margin-bottom: var(--p-space-2);
+    }
+  }
+}
+
+.empty-state-container {
+  padding: 6rem 1rem;
+}

@@ -1,0 +1,36 @@
+model Checkout {
+    ...id
+    abandonedCheckoutId  Int         @unique
+    abandonedCheckoutUrl String
+    cartToken            String
+    customer             Customer
+    token                String
+    name                 String
+    totalLineItemsPrice  String
+    totalPrice           String
+    totalTax             String
+    subtotalPrice        String
+    customerLocale       String
+    currency             String
+    lineItems            LineItems[]
+    state                String
+    shopId               String      @db.ObjectId
+    voicemail_sent_at    DateTime?
+
+    @@map("checkouts")
+}
+
+type LineItems {
+    sku       String
+    productId Int
+    price     String
+    quantity  Int
+}
+
+type Customer {
+    id        Int
+    firstName String
+    lastName  String
+    phone     String
+    country   String
+}

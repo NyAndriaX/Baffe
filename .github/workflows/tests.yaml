@@ -1,0 +1,101 @@
+name: CI test
+
+on:
+  pull_request:
+  # push:
+  #   paths:
+  #     - 'api/**'
+  #     - .github/workflows/test-api.yaml
+
+jobs:
+  test-api:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: api
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18.13
+        cache: 'yarn'
+        cache-dependency-path: api/yarn.lock
+
+    - name: Install dependencies
+      run: yarn install
+
+    - name: Run the tests
+      run: yarn test
+
+    - name: Prepare coverage result file
+      run: cp coverage/clover.xml api-cov.xml
+
+    - name: Upload coverage file
+      uses: actions/upload-artifact@master
+      with:
+        name: "coverage-${{ github.run_id }}-${{ github.run_number }}"
+        path: api/api-cov.xml
+        retention-days: 1
+
+  # test-voice-shooter:
+  #   runs-on: ubuntu-latest
+  #   defaults:
+  #     run:
+  #       working-directory: voice-shooter
+
+  #   steps:
+  #   - name: Checkout repository
+  #     uses: actions/checkout@v3
+
+  #   - name: Set up Node.js
+  #     uses: actions/setup-node@v3
+  #     with:
+  #       node-version: 18.13
+  #       cache: 'yarn'
+  #       cache-dependency-path: voice-shooter/yarn.lock
+
+  #   - name: Install dependencies
+  #     run: yarn install
+
+  #   - name: Run the tests
+  #     run: yarn test
+
+  #   - name: Prepare coverage result file
+  #     run: cp coverage/clover.xml voice-shooter-cov.xml
+
+  #   - name: Upload coverage file
+  #     uses: actions/upload-artifact@master
+  #     with:
+  #       name: "coverage-${{ github.run_id }}-${{ github.run_number }}"
+  #       path: voice-shooter/voice-shooter-cov.xml
+  #       retention-days: 1
+
+  upload-codecov:
+    # needs: [test-api, test-voice-shooter]
+    needs: [test-api]
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Download coverage
+      uses: actions/download-artifact@master
+      with:
+        name: "coverage-${{ github.run_id }}-${{ github.run_number }}"
+
+    - name: Display structure of downloaded files
+      run: ls -R
+
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
+        # files: ./voice-shooter-cov.xml,./api-cov.xml
+        files: ./api-cov.xml
+        fail_ci_if_error: true
+        verbose: true
